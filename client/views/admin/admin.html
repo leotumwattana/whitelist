@@ -1,0 +1,10 @@
+<template name="admin">
+  <h1>Whitelist</h1>
+  {{#each whiteListedUsers }}
+    {{ email }}
+  {{/each }}
+  <form action="#">
+    <input type="email" id="white-listed-email">
+    <input type="submit" value="Add">
+  </form>
+</template>
